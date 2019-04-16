@@ -36,4 +36,8 @@ cc_library_static {
         "WildcardPattern.cpp",
     ],
     include_dirs: ["frameworks/compile/mclinker/include/mcld/Script"],
+    yacc: {
+        gen_location_hh: true,
+        gen_position_hh: true,
+    },
 }
