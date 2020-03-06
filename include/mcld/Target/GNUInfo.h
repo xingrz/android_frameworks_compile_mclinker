@@ -54,11 +54,11 @@ class GNUInfo {
 
   /// commonPageSize - the common page size of the target machine, and we set it
   /// to 4K here. If target favors the different size, please override this
-  virtual uint64_t commonPageSize() const { return 0x1000; }
+  virtual uint64_t commonPageSize() const { return 0x4000; }
 
   /// abiPageSize - the abi page size of the target machine, and we set it to 4K
   /// here. If target favors the different size, please override this function
-  virtual uint64_t abiPageSize() const { return 0x1000; }
+  virtual uint64_t abiPageSize() const { return 0x4000; }
 
   /// stubGroupSize - the default group size to place stubs between sections.
   virtual unsigned stubGroupSize() const { return 0x10000; }
